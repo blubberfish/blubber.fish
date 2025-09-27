@@ -1,4 +1,4 @@
-import { BetterAuthOptions } from 'better-auth'
+import { BetterAuthOptions } from "better-auth";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
 import { MongoClient } from "mongodb";
 
@@ -20,5 +20,10 @@ export default {
       clientSecret: process.env.GITHUB_CLIENT_SECRET,
     },
   },
-  database: mongodbAdapter(dbClient.db("users"), { client: dbClient }),
-} satisfies BetterAuthOptions
+  database: mongodbAdapter(
+    dbClient.db(assertNonEmptyString(process.env.USERS_DB)),
+    {
+      client: dbClient,
+    }
+  ),
+} satisfies BetterAuthOptions;
