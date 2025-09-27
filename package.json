@@ -1,0 +1,9 @@
+{
+  "name": "blubber.fish",
+  "author": "Chua Siang Poh",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": [
+    "site"
+  ]
+}
