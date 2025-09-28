@@ -1,0 +1,10 @@
+{
+  "name": "@lib/react",
+  "version": "1.0.0",
+  "exports": {
+    "./icons": "./icons/index.ts"
+  },
+  "author": "Chua Siang Poh",
+  "private": true,
+  "license": "UNLICENSED"
+}

@@ -4,6 +4,9 @@
   "license": "UNLICENSED",
   "private": true,
   "workspaces": [
-    "site"
+    "lib/auth",
+    "lib/react",
+    "site",
+    "site:profile"
   ]
 }

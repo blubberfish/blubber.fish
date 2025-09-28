@@ -13,11 +13,7 @@ export default function Layout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div className="w-screen min-h-screen from-blue-800 to-violet-900 bg-gradient-to-br text-white">
-          <div className="w-full max-w-sm mx-auto pt-16">{children}</div>
-        </div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
