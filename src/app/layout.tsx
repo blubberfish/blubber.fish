@@ -1,4 +1,4 @@
-import { Blubberfish } from "@lib/react/icons";
+import { Blubberfish } from "@/lib/react/icons";
 import type { Metadata } from "next";
 import "./globals.css";
 

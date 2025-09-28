@@ -1,5 +1,5 @@
-import { getSession } from "@lib/auth";
-import { SignInButton } from "@lib/auth/client";
+import { getSession } from "@/lib/auth";
+import { SignInButton } from "@/lib/auth/client";
 import { headers } from "next/headers";
 
 export default async function Page() {
