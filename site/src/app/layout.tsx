@@ -1,3 +1,4 @@
+import { Blubberfish } from "@lib/react/icons";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -15,7 +16,13 @@ export default function Layout({
     <html lang="en">
       <body>
         <div className="w-screen min-h-screen from-blue-800 to-violet-900 bg-gradient-to-br text-white">
-          <div className="w-full max-w-sm mx-auto pt-16">{children}</div>
+          <div className="w-full max-w-sm mx-auto pt-16">
+            <header className="mx-6 mb-8">
+
+            <Blubberfish className="h-24 opacity-85 backdrop-blur" />
+            </header>
+            {children}
+          </div>
         </div>
       </body>
     </html>

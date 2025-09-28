@@ -8,8 +8,6 @@ const BASE_STYLE = {
 export function Blubberfish({ className }: { className?: string }) {
   return (
     <svg
-      width="100%"
-      height="100%"
       viewBox="0 0 242 150"
       version="1.1"
       className={className}

@@ -3,5 +3,5 @@ export default function Layout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return <main className="mx-6 mt-8">{children}</main>;
 }

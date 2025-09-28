@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "exports": {
     ".": "./index.ts",
-    "./client": "./client.ts"
+    "./client": "./client/index.ts"
   },
   "author": "Chua Siang Poh",
   "license": "MIT",
