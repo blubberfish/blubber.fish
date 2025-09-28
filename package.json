@@ -6,7 +6,7 @@
   "workspaces": [
     "lib/auth",
     "lib/react",
-    "site",
+    "site:root",
     "site:profile"
   ]
 }
