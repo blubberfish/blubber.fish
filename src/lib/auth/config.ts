@@ -14,6 +14,13 @@ const dbClient = new MongoClient(
 );
 
 export default {
+  advanced: {
+    crossSubDomainCookies: {
+      enabled: true,
+      domain: new URL(assertNonEmptyString(process.env.BETTER_AUTH_URL))
+        .hostname,
+    },
+  },
   socialProviders: {
     github: {
       clientId: assertNonEmptyString(process.env.GITHUB_CLIENT_ID),

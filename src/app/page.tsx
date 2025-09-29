@@ -4,7 +4,6 @@ import { headers } from "next/headers";
 
 export default async function Page() {
   const requestHeaders = await headers();
-  console.log("Request Headers:", Object.fromEntries(requestHeaders.entries()));
   const session = await getSession({ headers: await headers() });
   return (
     <main className="mx-6 mt-8">
