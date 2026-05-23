@@ -3,9 +3,13 @@
 {
 	"name": "Node.js",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+	"build": {
+		"dockerfile": "../DOCKERFILE",
+		"context": ".."
+	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+	"workspaceFolder": "/workspace",
 	"features": {
-		"ghcr.io/devcontainers-extra/features/netlify-cli:1": {}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
