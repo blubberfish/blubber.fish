@@ -20,10 +20,17 @@ function getConfig() {
   };
 }
 
+const BLUBBER_FISH_REGEX = /^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)*blubber\.fish$/i;
+
 export default function Layout({ children }: LayoutProps<"/auth">) {
   const { clerk } = getConfig();
   return (
-    <ClerkProvider allowedRedirectOrigins={clerk.allowedOrigin}>
+    <ClerkProvider
+      allowedRedirectOrigins={[
+        ...clerk.allowedOrigin,
+        BLUBBER_FISH_REGEX,
+      ]}
+    >
       {children}
     </ClerkProvider>
   );
